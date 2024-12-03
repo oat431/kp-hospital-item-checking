@@ -6,9 +6,10 @@ import Footer from './components/Footer.vue'
 <template>
   <NavBar />
   <div class="p-3">
-    <Table title="Item Section 1" datasource="item1" />
-    <Table title="Item Section 2" datasource="item2" />
-    <Table title="Item Section 3" datasource="item3" />
+    <Table title="ยา" datasource="item1" />
+    <Table title="อุปกรณ์" datasource="item2" />
+    <Table title="รถ emergency เด็ก" datasource="item3" />
+    <Table title="รถ emergency ผู้ใหญ่" datasource="item3" />
   </div>
   <div class="p-3">
     <label class="form-control">
@@ -19,7 +20,10 @@ import Footer from './components/Footer.vue'
     </label>
   </div>
   <div class="grid justify-items-end p-3">
-    <button class="btn btn-neutral">Neutral</button>
+    <input type="text" placeholder="signed" class="input input-bordered w-full max-w-xs" />
+  </div>
+  <div class="grid justify-items-end p-3">
+    <button class="btn btn-neutral">Submit</button>
   </div>
   <Footer />
 </template>

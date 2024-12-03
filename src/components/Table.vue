@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { defineProps, ref } from 'vue'
+import TableRow from './TableRow.vue'
 const props = defineProps<{
     title: string,
     datasource: string
@@ -20,7 +21,7 @@ if (props.datasource === 'item3') {
     items.value = item3
 }
 
-const checkItem[] = ref<CheckItem[]>([])
+// const checkItem[] = ref<CheckItem[]>([])
 
 
 </script>
@@ -32,33 +33,22 @@ const checkItem[] = ref<CheckItem[]>([])
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>item name</th>
-                    <th>amount</th>
-                    <th>Complete</th>
-                    <th>Incomplete</th>
-                    <th>found</th>
-                    <th>reason</th>
+                    <th>ชื่อของ</th>
+                    <th>จำนวนที่ต้องมี</th>
+                    <th>หน่วย</th>
+                    <th>ของครบ</th>
+                    <th>ของไม่ครบ</th>
+                    <th>เจอเท่าไร</th>
+                    <th>เหตุผล</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="(item, idx) in items" :key="item" onchange="updateData">
-                    <td>{{ idx + 1 }}</td>
-                    <td>{{ item.name }}</td>
-                    <td>{{ item.amount }}</td>
-                    <td>
-                        <input type="checkbox" class="checkbox border-2" />
-                    </td>
-                    <td>
-                        <input type="checkbox" class="checkbox border-2" />
-                    </td>
-                    <td>
-                        <input type="text" placeholder="found" class="input input-bordered w-20 max-w-xs" />
-                    </td>
-                    <td>
-                        <input type="text" placeholder="reason" class="input input-bordered w-100 max-w-xs" />
-                    </td>
+                <tr v-for="(item, idx) in items" :key="item">
+                    <TableRow :idx="idx" :item="item" />
                 </tr>
             </tbody>
         </table>
+        <div class="divider"></div>
     </div>
 </template>
