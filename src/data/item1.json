@@ -8,30 +8,5 @@
         "name": "Bricanyl",
         "amount": 20,
         "unit": "Amp"
-    },
-    {
-        "name": "item3",
-        "amount": 1,
-        "unit": "Amp"
-    },
-    {
-        "name": "item4",
-        "amount": 1,
-        "unit": "Amp"
-    },
-    {
-        "name": "item5",
-        "amount": 1,
-        "unit": "Amp"
-    },
-    {
-        "name": "item6",
-        "amount": 1,
-        "unit": "Amp"
-    },
-    {
-        "name": "item6",
-        "amount": 1,
-        "unit": "Amp"
     }
 ]

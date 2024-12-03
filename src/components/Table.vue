@@ -8,7 +8,7 @@ const props = defineProps<{
 import item1 from '../data/item1.json'
 import item2 from '../data/item2.json'
 import item3 from '../data/item3.json'
-import CheckItem from '../model/CheckItem.ts'
+import item4 from '../data/item4.json'
 
 const items = ref<any[]>([])
 if (props.datasource === 'item1') {
@@ -20,9 +20,9 @@ if (props.datasource === 'item2') {
 if (props.datasource === 'item3') {
     items.value = item3
 }
-
-// const checkItem[] = ref<CheckItem[]>([])
-
+if (props.datasource === 'item4') {
+    items.value = item4
+}
 
 </script>
 <template>
@@ -36,16 +36,14 @@ if (props.datasource === 'item3') {
                     <th>ชื่อของ</th>
                     <th>จำนวนที่ต้องมี</th>
                     <th>หน่วย</th>
-                    <th>ของครบ</th>
-                    <th>ของไม่ครบ</th>
+                    <th>ของครบหรือไม่ ?</th>
                     <th>เจอเท่าไร</th>
                     <th>เหตุผล</th>
-                    <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr v-for="(item, idx) in items" :key="item">
-                    <TableRow :idx="idx" :item="item" />
+                    <TableRow :idx="idx" :item="item" :type="datasource" />
                 </tr>
             </tbody>
         </table>

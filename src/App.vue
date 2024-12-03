@@ -9,7 +9,7 @@ import Footer from './components/Footer.vue'
     <Table title="ยา" datasource="item1" />
     <Table title="อุปกรณ์" datasource="item2" />
     <Table title="รถ emergency เด็ก" datasource="item3" />
-    <Table title="รถ emergency ผู้ใหญ่" datasource="item3" />
+    <Table title="รถ emergency ผู้ใหญ่" datasource="item4" />
   </div>
   <div class="p-3">
     <label class="form-control">
