@@ -1,30 +1,25 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts" setup>
+import NavBar from './components/NavBar.vue'
+import Table from './components/Table.vue'
+import Footer from './components/Footer.vue'
 </script>
-
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <NavBar />
+  <div class="p-3">
+    <Table title="Item Section 1" datasource="item1" />
+    <Table title="Item Section 2" datasource="item2" />
+    <Table title="Item Section 3" datasource="item3" />
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <div class="p-3">
+    <label class="form-control">
+      <div class="label">
+        <span class="label-text">Remark</span>
+      </div>
+      <textarea class="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
+    </label>
+  </div>
+  <div class="grid justify-items-end p-3">
+    <button class="btn btn-neutral">Neutral</button>
+  </div>
+  <Footer />
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>

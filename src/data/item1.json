@@ -1,0 +1,26 @@
+[
+    {
+        "name": "item1",
+        "amount": 1
+    },
+    {
+        "name": "item2",
+        "amount": 1
+    },
+    {
+        "name": "item3",
+        "amount": 1
+    },
+    {
+        "name": "item4",
+        "amount": 1
+    },
+    {
+        "name": "item5",
+        "amount": 1
+    },
+        {
+        "name": "item6",
+        "amount": 1
+    }
+]
