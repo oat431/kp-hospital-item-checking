@@ -5,14 +5,14 @@ const props = defineProps<{
     title: string,
     datasource: string
 }>()
-import item1 from '../data/item1.json'
+import medicine from '../data/medicine.json'
 import item2 from '../data/item2.json'
 import item3 from '../data/item3.json'
 import item4 from '../data/item4.json'
 
 const items = ref<any[]>([])
-if (props.datasource === 'item1') {
-    items.value = item1
+if (props.datasource === 'medicine') {
+    items.value = medicine
 }
 if (props.datasource === 'item2') {
     items.value = item2

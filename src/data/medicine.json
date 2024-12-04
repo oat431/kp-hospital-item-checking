@@ -1,0 +1,97 @@
+[
+    {
+        "name": "Bricanyl",
+        "amount": 20,
+        "unit": "Amp"
+    },
+    {
+        "name": "Dopamine",
+        "amount": 2,
+        "unit": "Amp"
+    },
+    {
+        "name": "50% MgSO4",
+        "amount": 24,
+        "unit": "Amp"
+    },
+    {
+        "name": "Dexa",
+        "amount": 4,
+        "unit": "Amp"
+    },
+    {
+        "name": "Mepamide",
+        "amount": 5,
+        "unit": "Amp"
+    },
+    {
+        "name": "Diazepam",
+        "amount": 2,
+        "unit": "Amp"
+    },
+    {
+        "name": "Transmine",
+        "amount": 4,
+        "unit": "Amp"
+    },
+    {
+        "name": "Vitamin K 10mg",
+        "amount": 2,
+        "unit": "Amp"
+    },
+    {
+        "name": "CPM",
+        "amount": 2,
+        "unit": "Amp"
+    },
+    {
+        "name": "Levophed",
+        "amount": 2,
+        "unit": "Amp"
+    },
+    {
+        "name": "Cytotec",
+        "amount": 10,
+        "unit": "Tab"
+    },
+    {
+        "name": "Morphine",
+        "amount": 2,
+        "unit": "Amp"
+    },
+    {
+        "name": "Pethidine",
+        "amount": 5,
+        "unit": "Amp"
+    },
+    {
+        "name": "Methergin",
+        "amount": 5,
+        "unit": "Amp"
+    },
+    {
+        "name": "Oxytocin",
+        "amount": 20,
+        "unit": "Amp"
+    },
+    {
+        "name": "Hydralazine",
+        "amount": 2,
+        "unit": "Amp"
+    },
+    {
+        "name": "Nalador",
+        "amount": 2,
+        "unit": "Amp"
+    },
+    {
+        "name": "Vitamin K 1mg",
+        "amount": 10,
+        "unit": "Amp"
+    },   
+    {
+        "name": "Unison",
+        "amount": 5,
+        "unit": "Amp"
+    }
+]
