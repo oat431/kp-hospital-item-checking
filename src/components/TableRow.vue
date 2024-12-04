@@ -97,7 +97,4 @@ function updateReason() {
         <input v-else type="text" placeholder="reason" class="input input-bordered w-100 max-w-xs" v-model="reason"
             @input="updateReason" />
     </td>
-    <!-- <td> -->
-    <!-- <button @click="showData" class="btn btn-outline">Show</button> -->
-    <!-- </td> -->
 </template>
